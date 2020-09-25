@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Exam</title>
+	<script type="text/javascript">
+		function check() {
+			m = 0;
+			a = 0;
+			c = 0;
+			u = 0;
+			if (document.f.q1[2].checked) {
+				m = m + 4;
+				a++;
+				c++;
+			}
+			if (document.f.q1[0].checked || document.f.q1[1].checked || document.f.q1[3].checked) {
+				m--;
+				a++;
+				u++;
+			}
+
+			if (document.f.q2[2].checked) {
+				m = m + 4;
+				a++;
+				c++;
+			}
+			if (document.f.q2[0].checked || document.f.q2[1].checked || document.f.q2[3].checked) {
+				m--;
+				a++;
+				u++;
+			}
+
+			if (document.f.q3[2].checked) {
+				m = m + 4;
+				a++;
+				c++;
+			}
+			if (document.f.q3[0].checked || document.f.q3[1].checked || document.f.q3[3].checked) {
+				m--;
+				a++;
+				u++;
+			}
+
+			if (document.f.q4[1].checked) {
+				m = m + 4;
+				a++;
+				c++;
+			}
+			if (document.f.q4[0].checked || document.f.q4[2].checked || document.f.q4[3].checked) {
+				m--;
+				a++;
+				u++;
+			}
+
+			if (document.f.q5[1].checked) {
+				m = m + 4;
+				a++;
+				c++;
+			}
+			if (document.f.q5[0].checked || document.f.q5[2].checked || document.f.q5[3].checked) {
+				m--;
+				a++;
+				u++;
+			}
+
+			if (document.f.q6[2].checked) {
+				m = m + 4;
+				a++;
+				c++;
+			}
+			if (document.f.q6[0].checked || document.f.q6[1].checked || document.f.q6[3].checked) {
+				m--;
+				a++;
+				u++;
+			}
+
+			if (document.f.q7[1].checked) {
+				m = m + 4;
+				a++;
+				c++;
+			}
+			if (document.f.q7[0].checked || document.f.q7[2].checked || document.f.q7[3].checked) {
+				m--;
+				a++;
+				u++;
+			}
+
+			if (document.f.q8[3].checked) {
+				m = m + 4;
+				a++;
+				c++;
+			}
+			if (document.f.q8[0].checked || document.f.q8[1].checked || document.f.q8[2].checked) {
+				m--;
+				a++;
+				u++;
+			}
+
+			if (document.f.q9[0].checked) {
+				m = m + 4;
+				a++;
+				c++;
+			}
+			if (document.f.q9[2].checked || document.f.q9[1].checked || document.f.q9[3].checked) {
+				m--;
+				a++;
+				u++;
+			}
+
+			if (document.f.q10[2].checked) {
+				m = m + 4;
+				a++;
+				c++;
+			}
+			if (document.f.q10[0].checked || document.f.q10[1].checked || document.f.q10[3].checked) {
+				m--;
+				a++;
+				u++;
+			}
+			document.write("Number of Questions = 10" + "<br /><br />" + "Number of Attempted questions = " + a + "<br /><br />" + "Number of Unattempted questions = " + (10 - a) + "<br /><br />" + "Number of Correct answers = " + c + "<br /><br />" + " Marks Scored = " + m);
+		}
+
+
+	</script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap3.3.7/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: #f08bda;">
+	<div>
+		<h2>Questions:</h2>
+		<hr>
+		<form name="f">
+			<ol>
+				<li>What does HTML stand for?<br><br><!-- 2 -->
+					<input type="radio" name="q1">Hyper Text Makeup Language</input><br>
+					<input type="radio" name="q1">Hyper Tranfer Markup Language</input><br>
+					<input type="radio" name="q1">Hyper Text Markup Language</input><br>
+					<input type="radio" name="q1">Highlighted Transfer Markup Language</input><br>
+				</li><br><br>
+				<li>The attribute of &ltform&gt tag is-<br><br><!-- 2 -->
+					<input type="radio" name="q2">Method</input><br>
+					<input type="radio" name="q2">Action</input><br>
+					<input type="radio" name="q2">Both Method and Action</input><br>
+					<input type="radio" name="q2">None of these</input><br>
+				</li><br><br>
+				<li>From which tag descriptive list starts ?<br><br><!-- 2 -->
+					<input type="radio" name="q3">@ltLL&gt</input><br>
+					<input type="radio" name="q3">@ltDD&gt</input><br>
+					<input type="radio" name="q3">@ltDL&gt</input><br>
+					<input type="radio" name="q3">@ltDS&gt</input><br>
+				</li><br><br>
+				<li>Markup tags tell the web browser-<br><br><!-- 1 -->
+					<input type="radio" name="q4">How to organise the page</input><br>
+					<input type="radio" name="q4">How to display the page</input><br>
+					<input type="radio" name="q4">How to display message box on page</input><br>
+					<input type="radio" name="q4">None of these</input><br>
+				</li><br><br>
+				<li>www is based on which model?<br><br><!-- 1 -->
+					<input type="radio" name="q5">Local-server</input><br>
+					<input type="radio" name="q5">Client-server</input><br>
+					<input type="radio" name="q5">3-tier</input><br>
+					<input type="radio" name="q5">None of these</input><br>
+				</li><br><br>
+				<li>Which of the following attributes of text box control allow to limit the maximum character?<br><br>
+					<!-- 2 -->
+					<input type="radio" name="q6">size</input><br>
+					<input type="radio" name="q6">len</input><br>
+					<input type="radio" name="q6">maxlength</input><br>
+					<input type="radio" name="q6">all of these</input><br>
+				</li><br><br>
+				<li>HTML is a subset of:<br><br><!-- 1 -->
+					<input type="radio" name="q7">SGMT</input><br>
+					<input type="radio" name="q7">SGML</input><br>
+					<input type="radio" name="q7">SGMD</input><br>
+					<input type="radio" name="q7">None of these</input><br>
+				</li><br><br>
+				<li>Which of the following is a container?<br><br><!-- 3 -->
+					<input type="radio" name="q8">&ltSELECT&gt</input><br>
+					<input type="radio" name="q8">&ltBODY&gt</input><br>
+					<input type="radio" name="q8">&ltINPUT&gt</input><br>
+					<input type="radio" name="q8">Both &ltBODY&gt and &ltINPUT&gt</input><br>
+				</li><br><br>
+				<li>The attribute, which define the relationship between current document and HREF'ed URL is:<br><br>
+					<!-- 0 -->
+					<input type="radio" name="q9">REL</input><br>
+					<input type="radio" name="q9">URL</input><br>
+					<input type="radio" name="q9">REV</input><br>
+					<input type="radio" name="q9">all of these</input><br>
+				</li><br><br>
+				<li>Character encoding is: <br><br><!-- 2 -->
+					<input type="radio" name="q10">method used to represent numbers in a character</input><br>
+					<input type="radio" name="q10">method used to represent character in a number</input><br>
+					<input type="radio" name="q10">a system that consists of a code which pairs each character with a
+					pattern,sequence of natural numbers or electrical pulse in order to transmit the data</input><br>
+					<input type="radio" name="q10">none of these</input><br>
+				</li>
+			</ol>
+		</form><br>
+		<div align="center"><input type="button" value="Submit" class="btn btn-success" onclick="check();"></div>
+	</div>
+</body>
+
+</html>

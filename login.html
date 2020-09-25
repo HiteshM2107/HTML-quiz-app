@@ -1,0 +1,35 @@
+<html>
+
+<head>
+	<script type="text/javascript">
+		function check() {
+			if (document.f.user.value == "USER" && document.f.pass.value == "test123") {
+				window.location = "ins.html";
+			}
+			else {
+				document.write("Alert! Incorrect Username or Password")
+			}
+		}
+		function clc() {
+			document.f.user.value = "";
+			document.f.pass.value = "";
+		}
+	</script>
+</head>
+
+<body style="background-color: #f08bda;">
+	<div display="flex" align-items="center">
+		<div align="center"
+			style="background-color:white; width:35%; margin-left: auto; margin-right: auto; margin-top: 17%; margin-bottom: auto; padding:1%;">
+			<h1>Welcome User</h1>
+			<form name="f">
+				Username: <input type="text" name="user"><br><br>
+				Password: <input type="password" name="pass"><br><br>
+				<input type="button" value="Login" onclick="check();">
+				<input type="button" value="Cancel" onclick="clc();"><br><br>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
